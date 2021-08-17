@@ -1,0 +1,200 @@
+/* @import url("https://fonts.google.com/specimen/Spartan"); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/bg-pattern-top-desktop.svg) no-repeat left top, url(../images/bg-pattern-bottom-desktop.svg) no-repeat right bottom;
+    height: 100vh;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+}
+
+.main-container {
+    max-width: 1100px;
+    /* padding: 1rem */
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+    flex-wrap: wrap;
+}
+
+.top-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    color: #511f50;
+    line-height: 2.8rem;
+}
+
+.top-container p {
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 68%);
+    line-height: 1.4rem;
+    font-weight: 500;
+}
+
+.rate {
+    font-size: 0.8rem;
+    background-color: #f7f2f8;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+    margin: 0.8rem;
+    align-items: center;
+    border-radius: 0.7rem;
+    color: #511f50;
+    height: 60px;
+    width: 425px;
+}
+
+.stars-img {
+    margin-right: 1rem;
+}
+
+.stars-box_2 {
+    margin-left: 1.5rem;
+}
+
+.stars-box_3 {
+    margin-left: 3.5rem;
+}
+
+
+/* ***************************** bottom of card*************** */
+
+.bottom-container {
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.public-card {
+    width: 340px;
+    height: 220px;
+    background-color: #511f50;
+    border-radius: 0.5rem;
+    padding: 30px 25px
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50%;
+    border-radius: 100PX;
+    mask-repeat: 1rem;
+}
+
+.profile h5 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.profile h6 {
+    font-size: 0.7rem;
+    color: hsl(333, 49%, 55%);
+}
+
+.text-card {
+    color: #f7f2f8;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.card-2 {
+    margin: 1rem 25px 0;
+}
+
+.card-3 {
+    margin-top: 2rem;
+}
+
+
+/* ************************responsive************ */
+
+@media only screen and (max-width:1099px) {
+    body {
+        display: flex;
+        align-items: center;
+        /* padding: 50px 0; */
+    }
+    .main-container {
+        max-width: 480px;
+    }
+    .text-header {
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    .text-header p {
+        margin: 10px
+    }
+    .rate {
+        font-size: 1rem;
+        background-color: #f7f2f8;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem 0;
+        margin: 1.4rem 0.8rem;
+        align-items: center;
+        border-radius: 0.7rem;
+        color: #511f50;
+        height: 80px;
+        /* width: 425px; */
+    }
+    .stars-box {
+        margin: 0 auto;
+    }
+    .stars-img {
+        margin-bottom: 10px;
+    }
+    .stars-box_2 {
+        margin-left: 0;
+    }
+    .stars-box_3 {
+        margin-left: 0;
+    }
+    .bottom-container {
+        margin-top: 30px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 400px;
+    }
+    .public-card {
+        width: 100%;
+        border-radius: 1rem;
+    }
+    .card-2,
+    .card-3 {
+        margin-top: 1.5rem;
+    }
+    .profile h6 {
+        font-size: 0.8em;
+        margin-top: 0.3px;
+    }
+}
